@@ -1,0 +1,24 @@
+@keyframes open {
+    0% {
+        transition: translateY(0);
+    }
+    50% {
+        transform: translateY(-2em);
+    }
+    100% {
+        transform: translateY(-5em)
+    }
+}
+
+
+@keyframes Salto {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 10px;
+    }
+}
+
+
+

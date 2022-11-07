@@ -1,0 +1,122 @@
+@import './src/flex';
+@import './src/vars';
+@import './src/mixin';
+@import './src/keyframes';
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    color: $letters;
+    background-color: $bg;
+    overflow: hidden;
+    
+    .header {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a { 
+            position: relative;
+            right: 20px;
+            @include icons;
+        }
+
+        code {
+            font-size: 2em;
+            display: flex;
+            color: $containerCol;
+            user-select: none;
+
+            h1 {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .welcome {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            font-size: 3rem;
+
+            &:nth-of-type(3) {
+                padding-left: 1.2rem;
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .about {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+
+    footer {
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 2;
+
+        > span{
+            @include icons;
+            position: relative;
+            animation: Salto 2s ease-out infinite;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+
+            a {
+                @include icons;  
+            }
+        }
+    }
+
+    .codeContiner {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        user-select: none;
+        z-index: 1;
+
+        code {
+            font-size: 2.2rem;
+            color: $codeColor;
+        }
+    }
+
+    .section-show {
+        opacity: 1;
+    }
+
+    .section-noShow {
+        opacity: 0;
+    }
+
+}
+
+
+
+
+

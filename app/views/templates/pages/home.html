@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+  <main class="main">
+    {% include 'header.html' %}
+    <section class="welcome">
+      <div>
+        <h2>Hola, Bienvenido</h2>
+        <h2>Mi nombre es Andres</h2>
+        <h2>Soy desarrollador</h2>
+      </div>
+    </section>
+    {% include 'pages/about.html' %}
+    {% include 'footer.html' %}
+    {% include 'code.html' %}
+  </main>
+{% endblock %}
+

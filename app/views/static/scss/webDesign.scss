@@ -1,0 +1,54 @@
+@media only screen and (min-device-width : 480px) {
+    .main {
+        .header {
+            code {
+                font-size: 2rem;
+            }
+        }
+
+        .welcome {
+            h2 {
+                font-size: 3rem;
+
+                &:nth-of-type(3) {
+                    padding-left: 1.2rem;
+                    font-size: 4rem;
+                }
+            }
+        }
+
+        .codeContiner {
+            code {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .main {
+        .header {
+            code {
+                font-size: .8rem;
+            }
+        }
+
+        .welcome {
+            h2 {
+                font-size: 2rem;
+
+                &:nth-of-type(3) {
+                    padding-left: 1rem;
+                    font-size: 2.8rem;
+                }
+            }
+        }
+
+        .codeContiner {
+            code {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
